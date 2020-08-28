@@ -1,5 +1,5 @@
 import pandas as pd
-import numpy as np
+
 df = pd.read_csv(r'D:\Coding\mlintro\01_cleancode\vinoejemplo\winequality-red.csv', sep=';')
 df.head()
 
