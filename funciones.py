@@ -3,30 +3,13 @@ import numpy as np
 df = pd.read_csv(r'D:\Coding\mlintro\01_cleancode\vinoejemplo\winequality-red.csv', sep=';')
 df.head()
 
-media_alcohol = df.alcohol.median()
-media_ph = df.pH.median()
-media_azucarResidual = df.residual_sugar.median()
-media_acidoCitrico = df.citric_acid.median()
-
-metrica = "alcohol"
-array = np.array(metrica)
-
-
-def calidad_promedio(mediana, array):
-    for i, array in enumerate(df.array):
-        if array >= mediana:
-            df.loc[i, array] = 'alto'
+#Funcion para calcular la calidad promedio de una metrica de vino (Alto y Bajo)
+def calidad_promedio(mediana, datos, metrica):
+    for i, columna in enumerate(datos):
+        if columna >= mediana:
+            df.loc[i, metrica] = 'alto'
         else:
-            df.loc[i, array] = 'bajo'
-    df.groupby(array).quality.mean()
-    print(df.groupby(array).quality.mean())
+            df.loc[i, metrica] = 'bajo'
+    media = df.groupby(metrica).quality.mean()
+    return print(media.to_string(),'\n')
 
-
-calidad_promedio(media_alcohol, array)
-print(calidad_promedio)
-
-
-# metrica = 'pH'
-# item = 'pH'
-# calidad_promedio(item, metrica)
-# print(calidad_promedio)
