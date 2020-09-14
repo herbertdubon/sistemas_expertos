@@ -27,4 +27,3 @@ calidad_promedio(mediana_azucarResidual, azucarResidual, 'residual_sugar')
 #Calidad de Ácido Cítrico en el vino
 calidad_promedio(mediana_acidoCitrico, acidoCitrico, 'citric_acid')
 
-
