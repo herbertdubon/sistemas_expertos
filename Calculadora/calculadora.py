@@ -1,5 +1,6 @@
 import pandas as pd
-import numy as np
+import numpy as np
+import math
 
 
 x = float(input('Ingrese el valor de x: '))
@@ -31,7 +32,8 @@ elif operacion == 5:
     resultado == x**y
     print('El resultado de ', x, ' elevado a la ', y, 'es ', resultado)
 elif operacion==6 and x>0:
-    resultado = math.log(x,y)
+    resultado = math.log10(x)
     print('El resultado del logaritmo de', x, 'es ', resultado)    
-
+else:
+    print('Elección no valida, vuelva a internatarlo.')
 
