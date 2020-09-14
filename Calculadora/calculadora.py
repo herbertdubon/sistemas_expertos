@@ -2,10 +2,11 @@ import pandas as pd
 import numpy as np
 import math
 
-
+#Ingreso de valores de 'x' y 'y'
 x = float(input('Ingrese el valor de x: '))
 y = float(input('Ingrese el valor de y: '))
 
+#Menu de Operaciones
 print('Seleccione la oepracion que desee realizar: ')
 print('1. Suma')
 print('2. Resta')
@@ -16,6 +17,7 @@ print('6. Logaritmo (del primer numero [x])')
 
 operacion = int(input('Cuál operación desea realizar? '))
 
+#Calculo de Operaciones
 if operacion == 1:
     resultado = x + y
     print('El resultado de ', x, ' mas ', y, 'es ', resultado)
