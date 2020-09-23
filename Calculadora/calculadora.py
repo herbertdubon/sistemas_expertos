@@ -4,7 +4,6 @@ import math
 
 
 #Menu de Operaciones
-
 while 1:
     print('Seleccione la oepracion que desee realizar: ')
     print('1. Suma')
@@ -16,8 +15,7 @@ while 1:
 
     operacion = int(input('\nCuál operación desea realizar?\n'))
 
-
-    #Calculo de Operaciones
+    #Calculo de Suma
     if operacion == 1:
         x = float(input('Ingrese el valor de x: '))
         y = float(input('Ingrese el valor de y: '))
@@ -26,7 +24,8 @@ while 1:
         menu = input('\nDesea realizar otra operación? (s/n)')
         if menu== "n":
             break
-        
+    
+    #Calculo de Resta    
     elif operacion == 2:
         x = float(input('Ingrese el valor de x: '))
         y = float(input('Ingrese el valor de y: '))
@@ -35,7 +34,8 @@ while 1:
         menu = input('\nDesea realizar otra operación? (s/n)')
         if menu== "n":
             break
-        
+    
+    #Calculo de Multiplicación
     elif operacion == 3:
         x = float(input('Ingrese el valor de x: '))
         y = float(input('Ingrese el valor de y: '))
@@ -44,7 +44,8 @@ while 1:
         menu = input('\nDesea realizar otra operación? (s/n)')
         if menu== "n":
             break
-        
+    
+    #Calculo de División
     elif operacion == 4:
         x = float(input('Ingrese el valor de x: '))
         y = float(input('Ingrese el valor de y: '))
@@ -59,7 +60,7 @@ while 1:
             menu = input('\nDesea realizar otra operación? (s/n)')
             if menu== "n":
                 break
-        
+    #Calculo de Potencia   
     elif operacion == 5:
         x = float(input('Ingrese el valor de x: '))
         y = float(input('Ingrese el valor de y: '))
@@ -69,6 +70,7 @@ while 1:
         if menu== "n":
             break
         
+    #Calculo de Logaritmo    
     elif operacion==6:
         x = float(input('Ingrese el valor de x: '))
         if x <= 0:
