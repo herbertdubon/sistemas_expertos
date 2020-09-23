@@ -237,7 +237,7 @@ btn6 = Button(
 )
 btn6.pack(side = LEFT, expand = True, fill = "both",)
 
-btnminus = Button(
+btnmenos = Button(
     btnrow2,
     text = "-",
     font = ("Verdana", 22),
@@ -245,7 +245,7 @@ btnminus = Button(
     border = 0,
     command = btn_resta,
 )
-btnminus.pack(side = LEFT, expand = True, fill = "both",)
+btnmenos.pack(side = LEFT, expand = True, fill = "both",)
 
 #Botones del Frame3
 
@@ -311,7 +311,7 @@ btn0 = Button(
 )
 btn0.pack(side = LEFT, expand = True, fill = "both",)
 
-btnequal = Button(
+btn_igual = Button(
     btnrow4,
     text = "=",
     font = ("Verdana", 22),
@@ -319,7 +319,7 @@ btnequal = Button(
     border = 0,
     command = resultado,
 )
-btnequal.pack(side = LEFT, expand = True, fill = "both",)
+btn_igual.pack(side = LEFT, expand = True, fill = "both",)
 
 btndiv = Button(
     btnrow4,
